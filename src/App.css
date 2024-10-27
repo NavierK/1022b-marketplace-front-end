@@ -1,42 +1,116 @@
+/* Configurações Gerais */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem;
+  font-family: 'Helvetica', sans-serif;
+  color: #2d2d2d;
+}
+
+h1 {
   text-align: center;
+  font-size: 2.3em;
+  color: #333;
+  margin-bottom: 1.8rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  font-size: 1.9em;
+  color: #444;
+  margin-bottom: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.produtos-container, .usuarios-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 2.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Estilização de Produtos */
+.produto-item {
+  max-width: 280px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 18px;
+  background-color: #f7f7f7;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease-in-out;
 }
 
-.card {
-  padding: 2em;
+.produto-item:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
-.read-the-docs {
-  color: #888;
+.produto-item h3 {
+  font-size: 1.4em;
+  color: #2c2c2c;
+  margin-bottom: 8px;
+}
+
+.produto-item p {
+  font-size: 1em;
+  color: #5d5d5d;
+  margin-bottom: 8px;
+}
+
+.imagem-container {
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.produto-item > .imagem-container > img {
+  width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+/* Estilização de Usuários */
+.usuario-item {
+  max-width: 280px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 18px;
+  background-color: #f0f0f0;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease-in-out;
+}
+
+.usuario-item:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.usuario-item h3 {
+  font-size: 1.4em;
+  color: #2c2c2c;
+  margin-bottom: 8px;
+}
+
+.usuario-item p {
+  font-size: 1em;
+  color: #5d5d5d;
+  margin-bottom: 6px;
+}
+
+.avatar-container {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.usuario-item > .avatar-container > img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid #bbb;
 }
