@@ -23,7 +23,7 @@ function App() {
   const [usuarios, setUsuarios] = useState<UsuarioType[]>([])
 
   useEffect(() => {
-    setNome("emule")
+    setNome("emule and rebreka")
 
     // Buscar os dados de produtos no Backend
     fetch("https://one022b-marketplace-ibug.onrender.com/produtos")
