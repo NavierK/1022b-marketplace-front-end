@@ -16,8 +16,8 @@ interface Usuario {
   id: number;
   nome: string;
   email: string;
-  dataCriacao: string;     // Renomeado de 'created_at' para um termo mais claro
-  dataAtualizacao: string; // Renomeado de 'updated_at' para um termo mais claro
+  created_at: string;     // Renomeado de 'created_at' para um termo mais claro
+  updated_at: string; // Renomeado de 'updated_at' para um termo mais claro
 }
 
 // Função principal do componente App
@@ -71,8 +71,8 @@ function App() {
           <div key={usuario.id} className="usuario-item">
             <h3>{usuario.nome}</h3>
             <p>Email: {usuario.email}</p>
-            <p>Data de Criação: {usuario.dataCriacao}</p>
-            <p>Última Atualização: {usuario.dataAtualizacao}</p>
+            <p>Data de Criação: {usuario.created_at}</p>
+            <p>Última Atualização: {usuario.updated_at}</p>
           </div>
         ))}
       </section>
